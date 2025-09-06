@@ -7,6 +7,7 @@ import MusicGenerator from '@/components/MusicGenerator';
 import MusicLibrary from '@/components/MusicLibrary';
 import KaraokeStudio from '@/components/KaraokeStudio';
 import LyricsLibrary from '@/components/LyricsLibrary';
+import YouTubeChannel from '@/components/YouTubeChannel';
 import TutorialsSection from '@/components/TutorialsSection';
 import ProfileSection from '@/components/ProfileSection';
 import Footer from '@/components/Footer';
@@ -103,7 +104,7 @@ const Index = () => {
         <HeroSection />
 
         <Tabs defaultValue="generator" className="w-full">
-          <TabsList className="grid w-full grid-cols-6 mb-8">
+          <TabsList className="grid w-full grid-cols-7 mb-8">
             <TabsTrigger value="generator" className="flex items-center space-x-2">
               <Icon name="Wand2" size={18} />
               <span>Генератор</span>
@@ -119,6 +120,10 @@ const Index = () => {
             <TabsTrigger value="lyrics" className="flex items-center space-x-2">
               <Icon name="BookOpen" size={18} />
               <span>Тексты</span>
+            </TabsTrigger>
+            <TabsTrigger value="youtube" className="flex items-center space-x-2">
+              <Icon name="Youtube" size={18} />
+              <span>YouTube</span>
             </TabsTrigger>
             <TabsTrigger value="tutorials" className="flex items-center space-x-2">
               <Icon name="GraduationCap" size={18} />
@@ -162,6 +167,10 @@ const Index = () => {
 
           <TabsContent value="lyrics" className="space-y-6" id="lyrics">
             <LyricsLibrary />
+          </TabsContent>
+
+          <TabsContent value="youtube" className="space-y-6" id="youtube">
+            <YouTubeChannel />
           </TabsContent>
 
           <TabsContent value="tutorials" className="space-y-6" id="tutorials">
