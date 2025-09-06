@@ -25,15 +25,38 @@ const Index = () => {
   const handleGenerate = () => {
     if (!prompt.trim()) return;
     setIsGenerating(true);
+    
+    const trackTitles = [
+      'Космическое путешествие',
+      'Неоновые мечты', 
+      'Цифровые грёзы',
+      'Лунная серенада',
+      'Электронные волны',
+      'Синтетические облака',
+      'Виртуальная реальность',
+      'Звёздная пыль'
+    ];
+
+    const genres = ['Electronic', 'Ambient', 'Lo-Fi', 'Synthwave', 'Chillout'];
+    const durations = ['2:45', '3:24', '4:12', '3:58', '5:07', '2:33'];
+
     setTimeout(() => {
       setIsGenerating(false);
+      const randomTitle = trackTitles[Math.floor(Math.random() * trackTitles.length)];
+      const randomGenre = genres[Math.floor(Math.random() * genres.length)];
+      const randomDuration = durations[Math.floor(Math.random() * durations.length)];
+      const durationParts = randomDuration.split(':');
+      const durationSeconds = parseInt(durationParts[0]) * 60 + parseInt(durationParts[1]);
+
       setCurrentTrack({
-        title: 'AI Generated Track',
+        title: randomTitle,
         description: prompt,
-        duration: '3:24',
-        genre: 'Electronic'
+        duration: randomDuration,
+        durationSeconds: durationSeconds,
+        genre: randomGenre,
+        audioUrl: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav'
       });
-    }, 3000);
+    }, Math.random() * 2000 + 3000);
   };
 
   const handleFileUpload = (event) => {
