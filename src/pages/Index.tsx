@@ -8,6 +8,7 @@ import MusicLibrary from '@/components/MusicLibrary';
 import KaraokeStudio from '@/components/KaraokeStudio';
 import LyricsLibrary from '@/components/LyricsLibrary';
 import YouTubeChannel from '@/components/YouTubeChannel';
+import YouTubeEmbed from '@/components/YouTubeEmbed';
 
 import ProfileSection from '@/components/ProfileSection';
 import Footer from '@/components/Footer';
@@ -151,6 +152,7 @@ const Index = () => {
           </TabsList>
 
           <TabsContent value="generator" className="space-y-6" id="generator">
+            <YouTubeEmbed />
             <MusicGenerator
               prompt={prompt}
               setPrompt={setPrompt}
