@@ -6,6 +6,7 @@ import HeroSection from '@/components/HeroSection';
 import MusicGenerator from '@/components/MusicGenerator';
 import MusicLibrary from '@/components/MusicLibrary';
 import KaraokeStudio from '@/components/KaraokeStudio';
+import LyricsLibrary from '@/components/LyricsLibrary';
 import TutorialsSection from '@/components/TutorialsSection';
 import ProfileSection from '@/components/ProfileSection';
 import Footer from '@/components/Footer';
@@ -102,7 +103,7 @@ const Index = () => {
         <HeroSection />
 
         <Tabs defaultValue="generator" className="w-full">
-          <TabsList className="grid w-full grid-cols-5 mb-8">
+          <TabsList className="grid w-full grid-cols-6 mb-8">
             <TabsTrigger value="generator" className="flex items-center space-x-2">
               <Icon name="Wand2" size={18} />
               <span>Генератор</span>
@@ -114,6 +115,10 @@ const Index = () => {
             <TabsTrigger value="karaoke" className="flex items-center space-x-2">
               <Icon name="Mic" size={18} />
               <span>Караоке</span>
+            </TabsTrigger>
+            <TabsTrigger value="lyrics" className="flex items-center space-x-2">
+              <Icon name="BookOpen" size={18} />
+              <span>Тексты</span>
             </TabsTrigger>
             <TabsTrigger value="tutorials" className="flex items-center space-x-2">
               <Icon name="GraduationCap" size={18} />
@@ -153,6 +158,10 @@ const Index = () => {
               stopRecording={stopRecording}
               setRecordedAudio={setRecordedAudio}
             />
+          </TabsContent>
+
+          <TabsContent value="lyrics" className="space-y-6" id="lyrics">
+            <LyricsLibrary />
           </TabsContent>
 
           <TabsContent value="tutorials" className="space-y-6" id="tutorials">
