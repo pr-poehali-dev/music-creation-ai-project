@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
             <img 
-              src="/img/1cb5d8e9-4714-4f7b-8b82-d457352bd0d7.jpg" 
+              src="https://cdn.poehali.dev/files/fcaa8df9-cff5-41ca-8e99-8db2101fcf4f.jpg" 
               alt="MusicalFox" 
               className="w-10 h-10 rounded-lg object-cover"
             />
