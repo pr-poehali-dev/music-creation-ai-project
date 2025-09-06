@@ -8,7 +8,7 @@ import MusicLibrary from '@/components/MusicLibrary';
 import KaraokeStudio from '@/components/KaraokeStudio';
 import LyricsLibrary from '@/components/LyricsLibrary';
 import YouTubeChannel from '@/components/YouTubeChannel';
-import TutorialsSection from '@/components/TutorialsSection';
+
 import ProfileSection from '@/components/ProfileSection';
 import Footer from '@/components/Footer';
 
@@ -89,12 +89,7 @@ const Index = () => {
     }
   };
 
-  const tutorials = [
-    { id: 1, title: 'Основы создания музыки с ИИ', duration: '12 мин', level: 'Начинающий' },
-    { id: 2, title: 'Работа с промптами для генерации', duration: '18 мин', level: 'Средний' },
-    { id: 3, title: 'Миксинг и мастеринг ИИ-треков', duration: '25 мин', level: 'Продвинутый' },
-    { id: 4, title: 'Создание профессиональных битов', duration: '20 мин', level: 'Средний' }
-  ];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-green-50">
@@ -104,7 +99,7 @@ const Index = () => {
         <HeroSection />
 
         <Tabs defaultValue="generator" className="w-full">
-          <TabsList className="grid w-full grid-cols-7 mb-8">
+          <TabsList className="grid w-full grid-cols-6 mb-8">
             <TabsTrigger value="generator" className="flex items-center space-x-2">
               <Icon name="Wand2" size={18} />
               <span>Генератор</span>
@@ -125,10 +120,7 @@ const Index = () => {
               <Icon name="Youtube" size={18} />
               <span>YouTube</span>
             </TabsTrigger>
-            <TabsTrigger value="tutorials" className="flex items-center space-x-2">
-              <Icon name="GraduationCap" size={18} />
-              <span>Обучение</span>
-            </TabsTrigger>
+
             <TabsTrigger value="profile" className="flex items-center space-x-2">
               <Icon name="User" size={18} />
               <span>Профиль</span>
@@ -173,9 +165,7 @@ const Index = () => {
             <YouTubeChannel />
           </TabsContent>
 
-          <TabsContent value="tutorials" className="space-y-6" id="tutorials">
-            <TutorialsSection tutorials={tutorials} />
-          </TabsContent>
+
 
           <TabsContent value="profile" className="space-y-6" id="profile">
             <ProfileSection />
