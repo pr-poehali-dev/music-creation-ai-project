@@ -55,23 +55,7 @@ const MusicGenerator: React.FC<MusicGeneratorProps> = ({
     { value: 'dark', label: 'Тёмный', emoji: '🌑' }
   ];
 
-  const sampleTracks = [
-    {
-      title: 'Cosmic Journey',
-      url: 'https://www.soundjay.com/misc/sounds/clock-ticking-5.wav',
-      duration: 184
-    },
-    {
-      title: 'Neon Dreams',
-      url: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav', 
-      duration: 165
-    },
-    {
-      title: 'Forest Whispers',
-      url: 'https://www.soundjay.com/misc/sounds/clock-ticking-5.wav',
-      duration: 203
-    }
-  ];
+
 
   useEffect(() => {
     if (isGenerating) {
@@ -349,10 +333,10 @@ const MusicGenerator: React.FC<MusicGeneratorProps> = ({
               </div>
             </div>
 
-            {currentTrack && (
+            {currentTrack && currentTrack.audioUrl && (
               <audio
                 ref={audioRef}
-                src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+                src={currentTrack.audioUrl}
                 preload="metadata"
               />
             )}
