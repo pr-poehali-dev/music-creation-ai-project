@@ -19,7 +19,7 @@ const TutorialsSection: React.FC<TutorialsSectionProps> = ({ tutorials }) => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center space-x-2">
+        <CardTitle className="flex items-center space-x-2 font-dancing">
           <Icon name="GraduationCap" size={24} className="text-cyan-500" />
           <span>Обучение и Туториалы</span>
         </CardTitle>
@@ -33,7 +33,7 @@ const TutorialsSection: React.FC<TutorialsSectionProps> = ({ tutorials }) => {
             <Card key={tutorial.id} className="hover:shadow-md transition-shadow cursor-pointer">
               <CardContent className="pt-6">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-medium text-lg">{tutorial.title}</h3>
+                  <h3 className="font-medium text-lg font-dancing">{tutorial.title}</h3>
                   <Badge 
                     variant={tutorial.level === 'Начинающий' ? 'default' : tutorial.level === 'Средний' ? 'secondary' : 'destructive'}
                   >

@@ -18,7 +18,7 @@ const ProfileSection = () => {
               МУ
             </div>
             <div>
-              <h3 className="font-semibold text-lg">Музыкант</h3>
+              <h3 className="font-semibold text-lg font-dancing">Музыкант</h3>
               <p className="text-gray-500">Начинающий композитор</p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const ProfileSection = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle className="flex items-center space-x-2">
+          <CardTitle className="flex items-center space-x-2 font-dancing">
             <Icon name="Trophy" size={24} className="text-yellow-500" />
             <span>Достижения</span>
           </CardTitle>
@@ -50,21 +50,21 @@ const ProfileSection = () => {
           <div className="flex items-center space-x-3 p-3 rounded-lg bg-yellow-50 border border-yellow-200">
             <Icon name="Music" size={20} className="text-yellow-600" />
             <div>
-              <h4 className="font-medium">Первый трек</h4>
+              <h4 className="font-medium font-dancing">Первый трек</h4>
               <p className="text-sm text-gray-600">Создал свой первый ИИ-трек</p>
             </div>
           </div>
           <div className="flex items-center space-x-3 p-3 rounded-lg bg-purple-50 border border-purple-200">
             <Icon name="Zap" size={20} className="text-purple-600" />
             <div>
-              <h4 className="font-medium">Скоростной композитор</h4>
+              <h4 className="font-medium font-dancing">Скоростной композитор</h4>
               <p className="text-sm text-gray-600">Создал 10 треков за день</p>
             </div>
           </div>
           <div className="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 border border-gray-200 opacity-60">
             <Icon name="Crown" size={20} className="text-gray-400" />
             <div>
-              <h4 className="font-medium">Мастер жанров</h4>
+              <h4 className="font-medium font-dancing">Мастер жанров</h4>
               <p className="text-sm text-gray-600">Создай треки в 5 разных жанрах</p>
             </div>
           </div>

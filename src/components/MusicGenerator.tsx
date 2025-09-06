@@ -24,7 +24,7 @@ const MusicGenerator: React.FC<MusicGeneratorProps> = ({
   return (
     <Card className="bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border-purple-200">
       <CardHeader>
-        <CardTitle className="flex items-center space-x-2">
+        <CardTitle className="flex items-center space-x-2 font-dancing">
           <Icon name="Sparkles" size={24} className="text-purple-600" />
           <span>ИИ Генератор Музыки</span>
         </CardTitle>
@@ -74,7 +74,7 @@ const MusicGenerator: React.FC<MusicGeneratorProps> = ({
             <CardContent className="pt-6">
               <div className="flex items-center justify-between mb-4">
                 <div>
-                  <h3 className="font-semibold">{currentTrack.title}</h3>
+                  <h3 className="font-semibold font-dancing">{currentTrack.title}</h3>
                   <p className="text-sm text-gray-600">{currentTrack.description}</p>
                 </div>
                 <Badge variant="secondary">{currentTrack.genre}</Badge>

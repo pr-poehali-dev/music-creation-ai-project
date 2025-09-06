@@ -13,7 +13,7 @@ const Header = () => {
               alt="MusicalFox" 
               className="w-10 h-10 rounded-lg object-cover"
             />
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent font-dancing">
               MusicalFox
             </h1>
           </div>

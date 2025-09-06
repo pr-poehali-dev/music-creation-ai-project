@@ -21,7 +21,7 @@ const MusicLibrary: React.FC<MusicLibraryProps> = ({ allTracks, handleFileUpload
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center space-x-2">
+        <CardTitle className="flex items-center space-x-2 font-dancing">
           <Icon name="Music" size={24} className="text-cyan-500" />
           <span>Библиотека Треков</span>
         </CardTitle>
@@ -56,7 +56,7 @@ const MusicLibrary: React.FC<MusicLibraryProps> = ({ allTracks, handleFileUpload
                   <Icon name="Music2" size={20} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="font-medium">{track.title}</h3>
+                  <h3 className="font-medium font-dancing">{track.title}</h3>
                   <p className="text-sm text-gray-500">{track.artist} • {track.genre}</p>
                 </div>
               </div>

@@ -12,14 +12,14 @@ const Footer = () => {
                 alt="MusicalFox" 
                 className="w-8 h-8 rounded object-cover"
               />
-              <h3 className="text-lg font-semibold">MusicalFox</h3>
+              <h3 className="text-lg font-semibold font-dancing">MusicalFox</h3>
             </div>
             <p className="text-gray-400 text-sm">
               Создавайте профессиональную музыку с помощью искусственного интеллекта
             </p>
           </div>
           <div>
-            <h4 className="font-medium mb-3">Продукт</h4>
+            <h4 className="font-medium mb-3 font-dancing">Продукт</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="#" className="hover:text-white transition-colors">Генератор</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Библиотека</a></li>
@@ -27,7 +27,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-medium mb-3">Ресурсы</h4>
+            <h4 className="font-medium mb-3 font-dancing">Ресурсы</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="#" className="hover:text-white transition-colors">Документация</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Туториалы</a></li>
@@ -35,7 +35,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-medium mb-3">Поддержка</h4>
+            <h4 className="font-medium mb-3 font-dancing">Поддержка</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="#" className="hover:text-white transition-colors">Помощь</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Контакты</a></li>

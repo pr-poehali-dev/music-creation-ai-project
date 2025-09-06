@@ -37,7 +37,7 @@ const KaraokeStudio: React.FC<KaraokeStudioProps> = ({
   return (
     <Card className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border-pink-200">
       <CardHeader>
-        <CardTitle className="flex items-center space-x-2">
+        <CardTitle className="flex items-center space-x-2 font-dancing">
           <Icon name="Mic" size={24} className="text-pink-600" />
           <span>Караоке Студия</span>
         </CardTitle>
@@ -48,7 +48,7 @@ const KaraokeStudio: React.FC<KaraokeStudioProps> = ({
       <CardContent className="space-y-6">
         {/* Track Selection */}
         <div className="space-y-4">
-          <h3 className="font-medium">Выберите трек для караоке:</h3>
+          <h3 className="font-medium font-dancing">Выберите трек для караоке:</h3>
           <div className="grid gap-2 max-h-40 overflow-y-auto">
             {allTracks.map((track) => (
               <div
@@ -85,7 +85,7 @@ const KaraokeStudio: React.FC<KaraokeStudioProps> = ({
                     <Icon name="Music2" size={24} className="text-white" />
                   </div>
                   <div className="text-left">
-                    <h3 className="font-semibold">{selectedKaraokeTrack.title}</h3>
+                    <h3 className="font-semibold font-dancing">{selectedKaraokeTrack.title}</h3>
                     <p className="text-sm text-gray-600">{selectedKaraokeTrack.artist}</p>
                   </div>
                 </div>
