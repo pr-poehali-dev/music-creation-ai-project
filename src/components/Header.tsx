@@ -13,28 +13,28 @@ const Header = () => {
               alt="MusicalFox" 
               className="w-10 h-10 rounded-lg object-cover"
             />
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-cyan-500 bg-clip-text text-transparent">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent">
               MusicalFox
             </h1>
           </div>
           <nav className="hidden md:flex space-x-8">
-            <a href="#generator" className="text-gray-600 hover:text-purple-600 font-medium transition-colors">
+            <a href="#generator" className="text-gray-600 hover:text-orange-600 font-medium transition-colors">
               Генератор
             </a>
-            <a href="#library" className="text-gray-600 hover:text-purple-600 font-medium transition-colors">
+            <a href="#library" className="text-gray-600 hover:text-green-600 font-medium transition-colors">
               Библиотека
             </a>
-            <a href="#karaoke" className="text-gray-600 hover:text-purple-600 font-medium transition-colors">
+            <a href="#karaoke" className="text-gray-600 hover:text-yellow-600 font-medium transition-colors">
               Караоке
             </a>
-            <a href="#tutorials" className="text-gray-600 hover:text-purple-600 font-medium transition-colors">
+            <a href="#tutorials" className="text-gray-600 hover:text-orange-600 font-medium transition-colors">
               Обучение
             </a>
             <a href="#profile" className="text-gray-600 hover:text-purple-600 font-medium transition-colors">
               Профиль
             </a>
           </nav>
-          <Button className="bg-gradient-to-r from-purple-600 to-cyan-500 hover:from-purple-700 hover:to-cyan-600">
+          <Button className="bg-gradient-to-r from-orange-600 to-yellow-500 hover:from-orange-700 hover:to-yellow-600">
             <Icon name="User" size={18} className="mr-2" />
             Войти
           </Button>

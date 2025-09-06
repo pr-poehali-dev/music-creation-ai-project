@@ -4,7 +4,7 @@ import WaveVisualization from './WaveVisualization';
 const HeroSection = () => {
   return (
     <section className="text-center mb-16">
-      <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-cyan-500 to-purple-600 bg-clip-text text-transparent">
+      <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-orange-600 via-yellow-500 to-green-600 bg-clip-text text-transparent">
         Создавай музыку с искусственным интеллектом
       </h2>
       <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
