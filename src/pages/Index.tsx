@@ -11,6 +11,7 @@ const Index = () => {
   const [prompt, setPrompt] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
   const [currentTrack, setCurrentTrack] = useState(null);
+  const [uploadedTracks, setUploadedTracks] = useState([]);
 
   const handleGenerate = () => {
     if (!prompt.trim()) return;
@@ -26,12 +27,29 @@ const Index = () => {
     }, 3000);
   };
 
+  const handleFileUpload = (event) => {
+    const files = event.target.files;
+    if (files && files.length > 0) {
+      const newTracks = Array.from(files).map((file, index) => ({
+        id: Date.now() + index,
+        title: file.name.replace(/\.[^/.]+$/, ''),
+        artist: 'Вы',
+        genre: 'Загруженный',
+        duration: '--:--',
+        file: file
+      }));
+      setUploadedTracks(prev => [...prev, ...newTracks]);
+    }
+  };
+
   const musicLibrary = [
     { id: 1, title: 'Cosmic Journey', artist: 'AI Studio', genre: 'Ambient', duration: '4:32' },
     { id: 2, title: 'Digital Dreams', artist: 'AI Studio', genre: 'Electronic', duration: '3:18' },
     { id: 3, title: 'Neon Lights', artist: 'AI Studio', genre: 'Synthwave', duration: '5:07' },
     { id: 4, title: 'Ocean Waves', artist: 'AI Studio', genre: 'Chill', duration: '6:15' }
   ];
+
+  const allTracks = [...musicLibrary, ...uploadedTracks];
 
   const tutorials = [
     { id: 1, title: 'Основы создания музыки с ИИ', duration: '12 мин', level: 'Начинающий' },
@@ -219,8 +237,26 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
+                <div className="mb-4">
+                  <input
+                    type="file"
+                    accept="audio/*"
+                    multiple
+                    onChange={handleFileUpload}
+                    className="hidden"
+                    id="audio-upload"
+                  />
+                  <label htmlFor="audio-upload">
+                    <Button variant="outline" className="cursor-pointer" asChild>
+                      <span>
+                        <Icon name="Upload" size={18} className="mr-2" />
+                        Загрузить свои треки
+                      </span>
+                    </Button>
+                  </label>
+                </div>
                 <div className="grid gap-4">
-                  {musicLibrary.map((track) => (
+                  {allTracks.map((track) => (
                     <div key={track.id} className="flex items-center justify-between p-4 rounded-lg border hover:bg-gray-50 transition-colors">
                       <div className="flex items-center space-x-4">
                         <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-purple-400 to-cyan-400 flex items-center justify-center">
