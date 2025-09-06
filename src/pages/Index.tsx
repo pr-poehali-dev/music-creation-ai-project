@@ -50,10 +50,10 @@ const Index = () => {
   };
 
   const musicLibrary = [
-    { id: 1, title: 'Cosmic Journey', artist: 'AI Studio', genre: 'Ambient', duration: '4:32' },
-    { id: 2, title: 'Digital Dreams', artist: 'AI Studio', genre: 'Electronic', duration: '3:18' },
-    { id: 3, title: 'Neon Lights', artist: 'AI Studio', genre: 'Synthwave', duration: '5:07' },
-    { id: 4, title: 'Ocean Waves', artist: 'AI Studio', genre: 'Chill', duration: '6:15' }
+    { id: 1, title: 'Cosmic Journey', artist: 'MusicalFox', genre: 'Ambient', duration: '4:32' },
+    { id: 2, title: 'Digital Dreams', artist: 'MusicalFox', genre: 'Electronic', duration: '3:18' },
+    { id: 3, title: 'Neon Lights', artist: 'MusicalFox', genre: 'Synthwave', duration: '5:07' },
+    { id: 4, title: 'Ocean Waves', artist: 'MusicalFox', genre: 'Chill', duration: '6:15' }
   ];
 
   const allTracks = [...musicLibrary, ...uploadedTracks];

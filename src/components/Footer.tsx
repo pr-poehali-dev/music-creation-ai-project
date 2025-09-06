@@ -9,10 +9,10 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img 
                 src="/img/1cb5d8e9-4714-4f7b-8b82-d457352bd0d7.jpg" 
-                alt="AI Music Studio" 
+                alt="MusicalFox" 
                 className="w-8 h-8 rounded object-cover"
               />
-              <h3 className="text-lg font-semibold">AI Music Studio</h3>
+              <h3 className="text-lg font-semibold">MusicalFox</h3>
             </div>
             <p className="text-gray-400 text-sm">
               Создавайте профессиональную музыку с помощью искусственного интеллекта
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 AI Music Studio. Все права защищены.</p>
+          <p>&copy; 2024 MusicalFox. Все права защищены.</p>
         </div>
       </div>
     </footer>

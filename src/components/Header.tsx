@@ -10,11 +10,11 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <img 
               src="/img/1cb5d8e9-4714-4f7b-8b82-d457352bd0d7.jpg" 
-              alt="AI Music Studio" 
+              alt="MusicalFox" 
               className="w-10 h-10 rounded-lg object-cover"
             />
             <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-cyan-500 bg-clip-text text-transparent">
-              AI Music Studio
+              MusicalFox
             </h1>
           </div>
           <nav className="hidden md:flex space-x-8">
